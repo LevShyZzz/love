@@ -3,15 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorpresa para mi Novia</title>
+    <title>Para Mi Novia 💖</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanaya&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <h1>¡Sorpresa, Amor!</h1>
-    <p>Esta es una página especial creada solo para ti. Espero que te guste.</p>
-    <button id="miBoton">Haz clic aquí</button>
+    <div id="cigarro" style="font-size: 5rem; cursor: pointer;">🚬</div>
+
+    <div id="carta-contenedor" style="display: none;">
+        <div id="carta" style="font-size: 7rem; cursor: pointer; animation: flotar-carta 2s infinite alternate;">✉️</div>
+        <div id="para-princesa">para mi princesa</div>
+    </div>
+
+    <div id="poema" style="display: none;">
+        <h1>Mi lugar 💖</h1>
+        <p id="mensaje" style="white-space: pre-line; font-size: 1.2rem; margin: 30px auto; max-width: 600px;">
+Recuerdo los días de andar sin buscar nada,
+con un rumbo tranquilo, un eco en la pared.
+Pensaba que la vida se trataba de eso,
+de juntar los pedazos, de estar siempre de pie.
+Creía conocer bien todas las calles,
+los atajos, las plazas y el anochecer.
+
+Y entonces llegaste, sin mapa y sin aviso,
+con esa forma tuya de mirar de verdad.
+No hiciste un ruido fuerte, no moviste una montaña,
+solo me sonreíste y cambiaste la ciudad.
+De pronto los colores se volvieron más vivos,
+y en la canción de siempre hubo un ritmo de más.
+
+Ahora me descubro buscando tu mano
+en medio de la gente o al ir a cruzar.
+Me aprendí de memoria el brillo de tus ojos,
+y el mundo se detiene si te escucho hablar.
+Encontré en tus abrazos un lugar de silencio
+donde todo lo malo se empieza a apagar.
+
+Contigo he aprendido que "hogar" no es una casa,
+es una risa a tiempo, es un rato de paz.
+Es saber que no importa qué tan fuerte sople el viento,
+porque al final del día, en ti puedo anclar.
+Eres ese secreto que no quiero contarle a nadie,
+y al mismo tiempo, a todos les quisiera gritar.
+
+Así que no, no sé qué nos traerá el mañana,
+ni tengo las respuestas o un plan principal.
+Pero quiero que sepas, con toda mi certeza,
+que mi sitio favorito, mi mejor capital,
+es este tiempo nuestro, esta historia tan simple...
+de seguir descubriendo el mundo contigo, y nada más.
+        </p>
+        <button id="btn-playlist" style="background:#c0392b;color:#fff;padding:15px 30px;border:none;border-radius:8px;font-size:1.1rem;cursor:pointer;margin-top:30px;">
+            Mis sentimientos por ti en una playlist
+        </button>
+        <div id="playlist-spotify" style="display:none; margin-top:25px;">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6Ozpf8LygprZTYegtVEnXU?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div id="corazones"></div>
+
+    <!-- corazones decorativos de fondo -->
+<div style="position:fixed;left:0;top:0;width:100vw;height:100vh;pointer-events:none;z-index:0;">
+    <span style="position:absolute;left:10vw;top:10vh;font-size:2.5rem;opacity:0.15;">💖</span>
+    <span style="position:absolute;left:80vw;top:20vh;font-size:3rem;opacity:0.12;">💗</span>
+    <span style="position:absolute;left:50vw;top:80vh;font-size:2.2rem;opacity:0.10;">💘</span>
+    <span style="position:absolute;left:30vw;top:60vh;font-size:2.8rem;opacity:0.13;">💝</span>
+    <span style="position:absolute;left:70vw;top:40vh;font-size:2.3rem;opacity:0.10;">💞</span>
+</div>
 
     <script src="script.js"></script>
+    <script>
+    // Mostrar el iframe de Spotify al hacer clic en el botón
+    document.addEventListener('DOMContentLoaded', () => {
+        const btnPlaylist = document.getElementById('btn-playlist');
+        const playlistDiv = document.getElementById('playlist-spotify');
+        if(btnPlaylist){
+            btnPlaylist.addEventListener('click', () => {
+                playlistDiv.style.display = 'block';
+                btnPlaylist.style.display = 'none';
+            });
+        }
+    });
+    </script>
 </body>
 </html>
