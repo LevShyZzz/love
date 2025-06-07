@@ -1,0 +1,29 @@
+body {
+    background-color: #ffebcd; /* Color de fondo color crema */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de letra */
+    text-align: center; /* Centrar el texto */
+    padding: 50px;
+}
+
+h1 {
+    color: #8b0000; /* Color de texto rojo oscuro */
+}
+
+p {
+    color: #555; /* Color de texto gris oscuro */
+    font-size: 1.2em; /* Tamaño de fuente del párrafo */
+}
+
+button {
+    background-color: #ff4500; /* Color de fondo naranja */
+    color: white; /* Color de texto blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Tamaño de fuente del botón */
+}
+
+button:hover {
+    background-color: #dc143c; /* Color al pasar el mouse */
+}
